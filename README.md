@@ -59,7 +59,8 @@ Tecnologia	Descrição
 
 📂 Estrutura de Componentes
 
-src/
+```
+rc/
 ├── assets/               # Imagens e ícones
 │   └── logo-removebg.png
 │
@@ -82,7 +83,7 @@ src/
 ├── main.tsx              # Ponto de entrada da aplicação
 ├── router.tsx            # Definição de rotas
 └── vite-env.d.ts         # Tipagens para Vite
-
+```
 
 🔧 Principais Funções
 
