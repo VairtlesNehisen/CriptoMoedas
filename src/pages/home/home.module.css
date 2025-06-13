@@ -1,0 +1,171 @@
+/* ======= Layout Principal ======= */
+.container {
+  margin: 0 14px;
+ 
+}
+
+/* ======= Formulário de Busca ======= */
+.form {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.form input {
+  margin: 20px 0;
+  width: 100%;
+  height: 40px;
+  padding: 0 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  outline: none;
+  text-align: center;
+}
+
+/* ======= Tabela ======= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-spacing: 0 14px;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 16px;
+  margin: 0.5em 0.75em;
+}
+
+th {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(114, 173, 250);
+  
+}
+
+
+
+.tr {
+  background-color: #1d1c20;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+td:first-child,
+th:first-child {
+  border-radius: 0;
+}
+
+td:last-child,
+th:last-child {
+  border-radius: 0;
+}
+
+table th,
+table td {
+  padding: 14px;
+  text-align: center;
+  
+}
+
+.td {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tdProfit {
+  color: #12f98a;
+}
+
+.tdLoss {
+  color: #f91212;
+  font-weight: bold;
+}
+
+/* ======= Ícones e Nome ======= */
+.logo {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  z-index: 99;
+}
+
+.name {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* ======= Botão Ver Mais ======= */
+.buttonMore {
+  background-color: rgb(114, 173, 250);
+  color: #fff;
+  margin: 14px 0;
+  padding: 8px 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.buttonMore:hover {
+  background-color: rgba(67, 137, 230, 0.8);
+  cursor: pointer;
+}
+
+/* ======= Responsivo ======= */
+@media (max-width: 600px) {
+  .name img {
+    margin-left: 14px;
+  }
+
+  table {
+    border: 0;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    padding: 0;
+  }
+
+  .tr {
+    border-bottom: 1px solid rgba(250, 248, 248, 0.93);
+    display: block;
+    margin-bottom: 14px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  table td {
+    border-bottom: 1px solid rgba(250, 248, 248, 0.93);
+    display: block;
+    text-align: right;
+    font-size: 14px;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
